@@ -4,7 +4,7 @@ import traceback
 
 if __name__ == "__main__":
     try:
-        print("[Starting MCP server…]", file=sys.stderr, flush=True)  # keep stdout clean for MCP
+        print("[Starting MCP server…]", file=sys.stderr, flush=True)
         mcp.run()
     except Exception:
         traceback.print_exc(file=sys.stderr, flush=True)
